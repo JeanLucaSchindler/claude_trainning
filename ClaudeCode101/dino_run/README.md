@@ -1,6 +1,6 @@
 # 🦖 Dino Run
 
-A browser-based "dinosaur runner" game (Chrome-dino style) served by a small
+A nice browser-based "dinosaur runner" game (Chrome-dino style) served by a small
 Flask web server. An auto-running dino must jump over obstacles. Survive
 **3 minutes** to win; hit an obstacle and it's game over.
 
