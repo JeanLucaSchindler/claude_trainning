@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Parse an AWS S3 bucket name and key from an S3 URI in the format 's3://bucket-name/path/to/object' and extract both components",
+    "type": "Regex",
+    "solution_criteria": "The regex should correctly capture the bucket name and object key separately, handling paths with multiple slashes and special characters (hyphens, dots, underscores)"
+  },
+  {
+    "task": "Create a Python function that takes an AWS IAM policy document (as a dictionary) and returns a list of all unique Actions granted in the policy",
+    "type": "Python",
+    "solution_criteria": "Function should extract Actions from all statements, handle both string and list formats for Actions, return deduplicated list, and work with wildcard actions like 's3:*'"
+  },
+  {
+    "task": "Generate a CloudFormation template (JSON) that defines a basic AWS Lambda function with a role that allows writing logs to CloudWatch Logs",
+    "type": "JSON",
+    "solution_criteria": "JSON should include proper CloudFormation syntax with Lambda function resource, IAM role with trust policy, and inline policy granting logs:CreateLogGroup, logs:CreateLogStream, and logs:PutLogEvents permissions"
+  }
+]
