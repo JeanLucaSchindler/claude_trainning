@@ -106,6 +106,18 @@ To fully implement the MCP features:
 1. Complete the TODOs in `mcp_server.py`
 2. Implement the missing functionality in `mcp_client.py`
 
+### Inspecting the MCP Server
+
+To explore the server's tools, resources, and prompts in the MCP Inspector, point the Inspector straight at the server.
+
+Run this from the project directory:
+
+```bash
+npx @modelcontextprotocol/inspector python mcp_server.py
+```
+
+This launches the Inspector UI and starts the server with `python mcp_server.py` (the server file's `__main__` block runs `mcp.run(transport="stdio")`). It avoids `mcp dev`, which requires both the `mcp` launcher and `uv` to be available.
+
 ### Linting and Typing Check
 
 There are no lint or type checks implemented.
